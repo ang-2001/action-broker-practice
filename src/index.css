@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  background-color: white;
+  font-family: 'Inter';
+  
+  h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+      font-size: 54px;
+      /* font-weight: 500; */
+      line-height: 64.8px;
+      /* letter-spacing: -0.5%; */
+  }
+
+  h2 {
+    font-size: 48px;
+    line-height: 120%;
+  }
+  
+  p {
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 24px;
+      letter-spacing: 0;
+  }
+
+  h3 {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 28.8px;
+      /* letter-spacing: -0.5%; */
+  }
+}
+
+body {
+  height: 100vh;
+}
