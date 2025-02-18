@@ -4,12 +4,15 @@
 
 .page-container {
   margin: 0 auto;
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .content-container {
   display: flex;
   flex-direction: column;
+  width: 100%;
   /* gap: 7.5em; */
 }
 
@@ -94,6 +97,10 @@
 }
 
 @media (max-width: 1120px) {
+  .page-content h1 {
+    font-size: 36px;
+  }
+
   .page-content {
     padding: 3em 1.5em;
   }
@@ -106,6 +113,10 @@
   .chart-page-container {
     flex-direction: column;
     align-items: start;
+  }
+
+  .account-types-container {
+    text-align: center;
   }
 
   .image {
