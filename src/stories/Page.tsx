@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import { Header } from './Header';
 import './page.css';
-import { Chart, Coin, CryptoCashback } from './assets/utils';
+import { Chart, CryptoCashback } from './assets/utils';
 import { Button } from './Button';
 import { Card } from './Card';
 import { Accordion } from './Accordion';
