@@ -19,25 +19,17 @@
     gap: 24px;
 }
 
-.accordion-item-container {
-    /* display: flex; */
-}
-
 .item-image {
-    /* width: 100%; */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
     height: 100%;
 }
 
+/* image defaults to hidden */
 .item-content .item-image {
     display: none;
 }
 
 .item-content span {
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     gap: 16px; 
 }

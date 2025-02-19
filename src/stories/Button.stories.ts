@@ -34,4 +34,11 @@ export const Secondary: Story = {
   },
 };
 
+export const SecondaryDark: Story = {
+  args: {
+    label: 'Button',
+    dark: true,
+  },
+};
+
 

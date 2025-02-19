@@ -20,6 +20,7 @@ export const Button = ({
   label,
   ...props
 }: ButtonProps) => {
+  // mode is primary if primary tag is included, else if its seconary we can choose between dark and light
   const mode = primary ? 'storybook-button--primary' : dark ? 'storybook-button--secondary--dark' : 'storybook-button--secondary--light';
   return (
     <button

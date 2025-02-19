@@ -14,9 +14,13 @@ export const Page: React.FC = () => {
 
   
   const [accordion, toggleAccordion] = useState<boolean>(false);
+
+  // the callback function passed to the header, so we know whether the dropdown menu is open or closed: can then render and unrender page components accordingly
   const handleAccordionToggle = (isActive: boolean) => {
     toggleAccordion(isActive);
   }
+
+  // this is how many items are to be listed in the accordion
   const items = [
     {
       title: 'Trade with the best', 
@@ -34,8 +38,8 @@ export const Page: React.FC = () => {
     <div className={'page-container'}>
       <Header onAccordionToggle={handleAccordionToggle}/>
       {/* first page section*/}
+      {/* if accordion is not open the page can be rendered: else hidden and dropdown coveres entire screen*/}
       {!accordion && (
-
         <div className={'content-container'}>
           <section className={'trade-page-container page-content'}>
             <div className={'info'}>
@@ -74,6 +78,7 @@ export const Page: React.FC = () => {
 
           <section className={'account-types-container page-content'}>
             <h1>Account Types</h1>
+            {/* groups the cards */}
             <div className={'cards-section'}>
               <Card 
                 title='CLASSIC' 
@@ -83,14 +88,14 @@ export const Page: React.FC = () => {
               <Card 
                 title='PRO' 
                 price={139} 
-                desc='Entry level account with a recommended minimum deposit of'
+                desc='Our Premium account with a minimum deposit of'
                 withdrawls={true}  
                 type='pro'
               />
               <Card 
                 title='ELITE' 
                 price={339} 
-                desc='Entry level account with a recommended minimum deposit of'  
+                desc='Exclusive account type with a minimum deposit of'  
                 withdrawls={true}
                 manage={true}
                 type='elite'

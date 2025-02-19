@@ -26,3 +26,24 @@ const meta = {
         desc: "Entry level account with a recommended minimum deposit of"
     },
   }
+
+  export const Pro: Story = {
+    args : {
+      title: "PRO",
+      price: 139,
+      desc: "Our Premium account with a minimum deposit of",
+      withdrawls: true,
+      type: 'pro'
+    },
+  }
+
+  export const Elite: Story = {
+    args : {
+      title: "Elite",
+      price: 339,
+      desc: "Exclusive account type with a minimum deposit of",
+      withdrawls: true,
+      manage: true,
+      type: 'elite'
+    },
+  }

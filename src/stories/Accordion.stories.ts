@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { fn } from '@storybook/test';
 import { Accordion } from './Accordion';
 import coin from './assets/images/platforms-trade-with-the-best.png';
 import computer from './assets/images/platforms-flexibility.png';

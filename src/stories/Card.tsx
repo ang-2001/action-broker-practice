@@ -45,6 +45,8 @@ export const Card = ({
     ...props
 }: CardProps) => {
     const [hovered, setHovered] = useState(false);
+
+    // handler functions that change the state of the hovered variable when the mouse hovers/leaves the button
     const handleMouseEnter = () => {
         setHovered(true);
     }
@@ -54,6 +56,7 @@ export const Card = ({
     }
 
     return (
+        // if we hover over the button, apply an additional tag to the card style to change the outlining shadow
         <div className={`card-container ${hovered ? "hover" : ""}`} id='card-container'>
             <section className='card-image-container'>
                 <div className='overlay-container'>
@@ -61,6 +64,7 @@ export const Card = ({
                     <img src={yellowHighlight} alt="" className={`overlay-image background background-base ${hovered ? "hover" : ""}`} id='base'/>
                     <img src={blueHighlight} alt="" className={`overlay-image background background-transition ${hovered ? "hover" : ""}`} id='transition'/>
                     
+                    {/* depending on what the type is, render a different image(crown, cup, medal) */}
                     {type === "elite" ? (
                         <img src={elite} alt='' className='overlay-image overlay'/>
                     ) : type === "pro" ? (
@@ -70,7 +74,8 @@ export const Card = ({
                     )}
                 </div>
             </section>
-
+            
+            {/* the card contents with the info */}
             <div className='card-contents'>
                 <section className='card-header-container'>
                     <h3 className='title'>{title}</h3>
@@ -98,6 +103,7 @@ export const Card = ({
                         <p>Min investment</p>
                         <h4>{min.toLocaleString('en', {useGrouping:true})}</h4>
                     </div>
+                    {/* render a check mark or x */}
                     <div className="list-line">
                         <p>Free withdrawals once a week</p>
                         {withdrawls ? (
@@ -116,6 +122,7 @@ export const Card = ({
                     </div>
                 </section>
                 <hr />
+                {/* button container makes button go full width of card, add handler functions */}
                 <div className={'button-container'} 
                     id='button' 
                     onMouseEnter={handleMouseEnter} 

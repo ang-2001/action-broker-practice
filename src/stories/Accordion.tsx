@@ -15,7 +15,7 @@ export interface AccordionProps {
   header?: string;
   /** page description */
   description?: string;
-  /** list of items containing title, text, and image(optional) */
+  /** list of items each containing title, text, and image(optional) */
   items: AccordionItem[];
 }
 
@@ -31,12 +31,15 @@ export const Accordion = ({
   };
 
   return (
-    
     <div className='accordion'>
+      {/* default image, hidden on mobile */}
       <div className="item-image-base">
+          {/* gets the image of the item that is currently open */}
           <img src={items[openIndex].image} alt='' />
       </div>
+
       <div className='accordion-content'>
+        {/* page info (title and description) */}
         <div className='accordion-header'>
           {header && (
             <h1>{header}</h1>
@@ -45,9 +48,10 @@ export const Accordion = ({
             <p>{description}</p>
           )}
         </div>
+
+        {/* the actual accordion maps each item in the list to the content */}
         {items.map((item, index) => (
           <div key={index} className={'accordion-item-container'}>
-            {/* image will be hidden if on mobile(inefficient) */}
             
             <div className={'item-content'}>
               <span onClick={ () => toggleAccordion(index)}>
@@ -60,12 +64,14 @@ export const Accordion = ({
                   {item.title}
                 </h3>
               </span>
+
+               {/* image will be hidden if not mobile (not ideal) */}
               {openIndex === index && (
                 <div className={'item-image'}>
                   <img src={item.image} alt=""/>
                 </div>
               )}
-
+              {/* the text that will display if the accordion item is opened */}
               {openIndex === index && (
                 <p>
                   {item.text}

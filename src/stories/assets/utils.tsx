@@ -12,7 +12,7 @@ import coin from './images/platforms-trade-with-the-best.png';
 import plus from './logos-and-icons/plus-circle 1.png';
 import minus from './logos-and-icons/minus-circle 1.png';
 
-
+// just some util exports to make it easier to add images
 export const Logo = () => {
     return (
         <img src={logo} alt='Icon'/>
