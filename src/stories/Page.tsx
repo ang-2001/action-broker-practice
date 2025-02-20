@@ -8,6 +8,7 @@ import { Card } from './Card';
 import { Accordion } from './Accordion';
 import coin from './assets/images/platforms-trade-with-the-best.png';
 import computer from './assets/images/platforms-flexibility.png';
+import { Footer } from './Footer';
 
 
 export const Page: React.FC = () => {
@@ -110,6 +111,7 @@ export const Page: React.FC = () => {
               description='Easily deployed across any organization of any scale. Unite teams, tools, and systems while maintaining flexibility in how teams prefer to work.'
             />
           </section>
+          <Footer />
         </div>
       )}
     </div>

@@ -1,17 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 hr {
     border: 1px solid #16182D;
     width: 100%;
     margin: 0;
     padding: 0;
     opacity: 10%;
-}
-
-p {
-    color: #16182D;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
 }
 
 .card-container {
@@ -27,7 +20,7 @@ p {
     border-radius: 8px;
     box-shadow: 0 10px 30px 0 #16182D1A;
     transition: box-shadow 300ms ease-out;
-    flex-grow: 1;
+    flex: 1;
 }
 
 
@@ -77,7 +70,7 @@ p {
     transform: translate(-50%, 0);
 }
 
-.card-header-container title h3 {
+.title {
     padding-bottom: 16px;
     /* gap: 1em; */
 }
@@ -85,6 +78,10 @@ p {
 .card-header-container h2 {
     padding-bottom: 8px;
     line-height: 100%;
+}
+
+.description {
+    opacity: 80%;
 }
 
 .price-line {
@@ -119,10 +116,11 @@ p {
     width: 100%;
 }
 
-.list-line p {
+.list-line p{
     opacity: 70%;
 }
-.button-container {
+
+.card-button-container {
     align-self: center;
     min-width: 100%;
 }

@@ -123,7 +123,7 @@ export const Card = ({
                 </section>
                 <hr />
                 {/* button container makes button go full width of card, add handler functions */}
-                <div className={'button-container'} 
+                <div className={'card-button-container'} 
                     id='button' 
                     onMouseEnter={handleMouseEnter} 
                     onMouseLeave={handleMouseLeave}

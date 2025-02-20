@@ -6,6 +6,10 @@
     justify-content: start;
 }
 
+.accordion p {
+    opacity: 100%;
+}
+
 .accordion-content {
     display: flex;
     flex-direction: column;

@@ -1,0 +1,148 @@
+/* Desktop */
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    padding: 4em 7.5em 1.5em;
+    background-color: #16182D;
+    color: white;
+}
+
+.footer-container p,a {
+    opacity: 70%;
+}
+
+.content-area {
+    display: flex;
+    padding-bottom: 3em;
+    border-bottom: solid 1px rgb(255, 255, 255, 0.2);
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1.5em;
+}
+
+/* all footer content(with headers) share this style */
+.footer-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.promo-section {
+    align-items: start;
+    max-width: 45%;
+}
+
+.social-list {
+    display: flex;
+    gap: 0.5em;
+}
+
+.extra-section {
+    display: flex;
+    gap: 1.5em;
+    /* flex-grow: 1; */
+    flex-shrink: 0;
+    justify-self: end;
+}
+
+.extra-section .ratings-container {
+    margin-left: 2em;
+}
+
+.links-container ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    list-style: none;
+    align-items: start;
+    gap: 0.5em;
+}
+
+.links-container li a:hover {
+    opacity: 100%;
+    transition: opacity 300ms ease-in-out;
+}
+
+.award-image-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+}
+
+.ratings-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.license-info {
+    text-align: center;
+}
+
+/* mobile */
+
+@media (max-width: 1328px) {
+    .footer-container {
+        padding: 3em 1.5em 3.5em;
+        /* footer font styling doesn't change */
+        h1 {
+            font-size: 54px;
+            font-weight: 700;
+            line-height: 64.8px;
+            letter-spacing: -0.5%;
+        }
+          
+        h2 {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 57.6px;
+            letter-spacing: -0.5%;
+        }
+          
+        h3 {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 28.8px;
+            letter-spacing: -0.5%;
+        }
+          
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0;
+        }
+    }
+    
+    .content-area {
+        flex-direction: column;
+        align-items: center;
+        gap: 4em;
+    }
+    .footer-content-wrapper {
+        align-items: center;
+        text-align: center;
+    }
+
+    .promo-section {
+        max-width: 100%;
+    }
+    .extra-section {
+        flex-direction: column;
+        /* align-items: center; */
+        gap: 4em;
+    }
+    
+    .links-container ul {
+        align-items: center;
+    }
+
+    .award-image-container {
+        flex-direction: row;
+    }
+
+    .extra-section .ratings-container {
+        margin: 0;
+    }
+}   
