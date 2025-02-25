@@ -1,0 +1,75 @@
+.button-base {
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+}
+
+.storybook-button {
+  border-radius: 30px;
+  height: 48px;
+  min-width: 118px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 300;
+  /* line-height: inherit; */
+  font-family: 'Inter';
+  transition: 250ms background-color ease-in; 
+}
+
+
+/* button style for socials */
+.button-social {
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: block;
+  margin: auto;
+}
+
+.storybook-button--primary {
+  background-color: #3e51dc;
+  color: white;
+  &:hover {
+    background-color: #28348D;
+  }
+  &:disabled {
+    background-color: #6E707C;
+    color: #16182D;
+  }
+}
+.storybook-button--secondary--light{
+  /* box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset; */
+  background-color: transparent;
+  border: solid 1px #3e51dc;                   
+  color: #3e51dc;
+  &:hover {
+    background-color: #3e51dc;
+    color: white;
+  }
+  &:focus {
+    border-color: #28348D;
+    color: #3E51DC;
+  }
+  &:disabled {
+    border-color: #6E707C;
+    color: #6E707C;
+  }
+}
+
+.storybook-button--secondary--dark{
+  /* box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset; */
+  background-color: transparent;
+  border: solid 1px #3e51dc;                   
+  color: white;
+  &:hover {
+    border-color: #28348D;
+    background-color: #28348D33;
+  }
+  &:focus {
+    border-color: #28348D;
+  }
+  &:disabled {
+    background-color: #6E707C;
+    color: #6E707C;
+  }
+}

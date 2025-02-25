@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { fn } from '@storybook/test';
-import facebook from './assets/logos-and-icons/facebook.svg';
-import linkedin from './assets/logos-and-icons/linkedin.svg';
-import twitter from './assets/logos-and-icons/twitter.svg';
+import facebook from '../assets/logos-and-icons/facebook.svg';
+import linkedin from '../assets/logos-and-icons/linkedin.svg';
+import twitter from '../assets/logos-and-icons/twitter.svg';
 
-import { SocialButton } from './ButtonSocial';
+import { SocialButton } from './components/ButtonSocial';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
