@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { fn } from '@storybook/test';
-import facebook from '../assets/logos-and-icons/facebook.svg';
-import linkedin from '../assets/logos-and-icons/linkedin.svg';
-import twitter from '../assets/logos-and-icons/twitter.svg';
+import facebook from './assets/logos-and-icons/facebook.svg';
+import linkedin from './assets/logos-and-icons/linkedin.svg';
+import twitter from './assets/logos-and-icons/facebook.svg';
 
 import { SocialButton } from './components/ButtonSocial';
 
